@@ -4,7 +4,7 @@
 
 </div>
 
-# NightWatch — Deterministik Monitoring
+# NightWatch — Детерминированный мониторинг
 
 LLMsiz infratuzilma monitoringi: Proxmox, tarmoq, firewall. Sof Python, cron, alert deduplikatsiya.
 
@@ -12,5 +12,14 @@ LLMsiz infratuzilma monitoringi: Proxmox, tarmoq, firewall. Sof Python, cron, al
 
 ![Namoyish](screenshots/demo.svg)
 
-## Litsenziya
-MIT
+## 📬 Aloqa
+
+Savollar bormi? Yozing: **[allumaxmail@gmail.com](mailto:allumaxmail@gmail.com)**
+
+---
+
+<div align="center">
+
+**🇬🇧 [English](README.md) · 🇷🇺 [Русский](README.ru.md) · 🇺🇿 [Oʻzbekcha](README.uz.md)**
+
+</div>

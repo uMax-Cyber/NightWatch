@@ -61,3 +61,15 @@ AI agents are powerful but unreliable when the LLM provider is down or hallucina
 
 ## License
 MIT
+
+## 📬 Contact
+
+Questions? Reach out: **[allumaxmail@gmail.com](mailto:allumaxmail@gmail.com)**
+
+---
+
+<div align="center">
+
+**🇬🇧 [English](README.md) · 🇷🇺 [Русский](README.ru.md) · 🇺🇿 [Oʻzbekcha](README.uz.md)**
+
+</div>

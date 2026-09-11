@@ -3,16 +3,16 @@
 <rect width="800" height="30" fill="#181825" rx="8"><animate attributeName="opacity" values="1;0.9;1" dur="4s" repeatCount="indefinite"/></rect>
 <circle cx="20" cy="15" r="6" fill="#f38ba8"/><circle cx="40" cy="15" r="6" fill="#f9e2af"/><circle cx="60" cy="15" r="6" fill="#a6e3a1"/>
 <text x="400" y="20" text-anchor="middle" fill="#cdd6f4" font-family="monospace" font-size="12">nightwatch.py</text>
-<text x="15" y="55" fill="#a6e3a1" font-family="monospace" font-size="13">$ ./scripts/nightwatch.py critical</text>
-<text x="15" y="85" fill="#f38ba8" font-family="monospace" font-size="14">🛡🔴 ALERT (14:32)</text>
-<text x="15" y="110" fill="#f38ba8" font-family="monospace" font-size="13">🔴 Storage /storage1 at 95.6%</text>
-<text x="15" y="135" fill="#f38ba8" font-family="monospace" font-size="13">🔴 UniFi device 'AP-Floor3' OFFLINE</text>
-<text x="15" y="165" fill="#a6e3a1" font-family="monospace" font-size="14">🟢 RESOLVED (14:35)</text>
-<text x="15" y="190" fill="#a6e3a1" font-family="monospace" font-size="13">🟢 Node pve2 back online</text>
-<text x="15" y="225" fill="#a6e3a1" font-family="monospace" font-size="13">$ ./scripts/nightwatch.py digest</text>
-<text x="15" y="255" fill="#89b4fa" font-family="monospace" font-size="13">🛡 Summary: Proxmox 3/3 | UniFi 96/96 | FW 2/2</text>
-<text x="15" y="285" fill="#a6e3a1" font-family="monospace" font-size="13">✅ All systems nominal</text>
-<rect x="15" y="430" width="10" height="18" fill="#a6e3a1">
-    <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+<text x="15" y="55" fill="#a6e3a1" font-family="monospace" font-size="13" opacity="0">$ ./scripts/nightwatch.py critical<animate attributeName="opacity" values="0;1" begin="0.3s" dur="0.4s" fill="freeze"/></text>
+<text x="15" y="85" fill="#f38ba8" font-family="monospace" font-size="14" opacity="0">🛡🔴 ALERT (14:32)<animate attributeName="opacity" values="0;1" begin="1s" dur="0.4s" fill="freeze"/><animate attributeName="opacity" values="1;0.6;1" begin="1.5s" dur="1.5s" repeatCount="indefinite"/></text>
+<text x="15" y="110" fill="#f38ba8" font-family="monospace" font-size="13" opacity="0">🔴 Storage /storage1 at 95.6%<animate attributeName="opacity" values="0;1" begin="1.7s" dur="0.4s" fill="freeze"/><animate attributeName="opacity" values="1;0.6;1" begin="2.2s" dur="1.5s" repeatCount="indefinite"/></text>
+<text x="15" y="135" fill="#f38ba8" font-family="monospace" font-size="13" opacity="0">🔴 UniFi device 'AP-Floor3' OFFLINE<animate attributeName="opacity" values="0;1" begin="2.4s" dur="0.4s" fill="freeze"/><animate attributeName="opacity" values="1;0.6;1" begin="2.9s" dur="1.5s" repeatCount="indefinite"/></text>
+<text x="15" y="165" fill="#a6e3a1" font-family="monospace" font-size="14" opacity="0">🟢 RESOLVED (14:35)<animate attributeName="opacity" values="0;1" begin="3.1s" dur="0.4s" fill="freeze"/></text>
+<text x="15" y="190" fill="#a6e3a1" font-family="monospace" font-size="13" opacity="0">🟢 Node pve2 back online<animate attributeName="opacity" values="0;1" begin="3.8s" dur="0.4s" fill="freeze"/></text>
+<text x="15" y="225" fill="#a6e3a1" font-family="monospace" font-size="13" opacity="0">$ ./scripts/nightwatch.py digest<animate attributeName="opacity" values="0;1" begin="4.8s" dur="0.4s" fill="freeze"/></text>
+<text x="15" y="255" fill="#89b4fa" font-family="monospace" font-size="13" opacity="0">🛡 Summary: Proxmox 3/3 | UniFi 96/96 | FW 2/2<animate attributeName="opacity" values="0;1" begin="5.6s" dur="0.4s" fill="freeze"/></text>
+<text x="15" y="285" fill="#a6e3a1" font-family="monospace" font-size="13" opacity="0">✅ All systems nominal<animate attributeName="opacity" values="0;1" begin="6.4s" dur="0.4s" fill="freeze"/></text>
+<rect x="200" y="271" width="10" height="16" fill="#a6e3a1" opacity="0">
+    <animate attributeName="opacity" values="1;0;1" begin="6.9s" dur="1s" repeatCount="indefinite"/>
   </rect>
 </svg>

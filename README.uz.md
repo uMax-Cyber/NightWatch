@@ -11,24 +11,24 @@
 ![Namoyish](screenshots/demo.svg)
 [![CI](https://github.com/uMax-Cyber/NightWatch/actions/workflows/ci.yml/badge.svg)](https://github.com/uMax-Cyber/NightWatch/actions/workflows/ci.yml)
 
-Deterministik (LLM ishlatmaydigan) infratuzilma monitoring demoni: Proxmox nodelari, tarmoq kontrollerlari, fayrvollar va xizmatlar. Kritik ogohlantirishlar 5 daqiqa ichida, kunlik digest, haftalik xavfsizlik auditi. Cron vazifalari sifatida ishlaydi — AI model ishdan chiqsa ham davom etadi.
+LLM ishlatmaydigan deterministik monitoring demoni: Proxmox nodelari, tarmoq kontrollerlari, fayrvollar va xizmatlar doimiy kuzatiladi. Kritik ogohlantirishlar 5 daqiqadan kechikmay keladi, har kuni digest, har hafta xavfsizlik auditi. Cron vazifalari sifatida ishlaydi — AI model ishdan chiqsa ham monitoring toʻxtamaydi.
 
 ## Nega deterministik?
 
-AI agentlar kuchli, lekin LLM provayderi ishlamayotganda yoki gallyutsinatsiya qilayotganda ishonchsiz. Night Watchman — **sof Python, faqat stdlib** — AI oflayn boʻlsa ham kuzatadi. Bu AI qatlamining ostidagi xavfsizlik toʻri.
+AI agentlar kuchli, lekin LLM provayderi ishlamay qolsa yoki gallyutsinatsiya qila boshlasa, ularga ishonib boʻlmaydi. Night Watchman esa — sof Python, faqat stdlib: AI oflayn boʻlganda ham kuzatishni davom ettiradi. Oddiy qilib aytganda, bu AI qatlamining ostida turgan orqa himoya qatlami.
 
 ## Monitorlar
 
 | Tekshiruv | Interval | Ogohlantirish sharti |
 |-----------|----------|----------------------|
-| Nodelar erishuvchanligi | 5 daq | API timeout yoki holat ≠ online |
-| Saqlash joyi bandligi | 5 daq | > 90% band |
-| Qurilmalar holati (tarmoq) | 5 daq | Har qanday qurilma offline/disconnected |
-| Shlyuz tirikligi | 5 daq | API erishib boʻlmaydi yoki autentifikatsiya xatosi |
-| SSH brute-force | haftada bir | > 20 muvaffaqiyatsiz urinish/hafta |
-| Paket yangilanishlari | haftada bir | > 100 kutilmoqda |
-| Backup yangiqligi | haftada bir | Yaqindagi backup fayllari yoʻq |
-| Port anomaliyalari | haftada bir | Tinglanayotgan portlar soni oʻzgargan |
+| Node holati | 5 daq | API javob bermasa yoki holat online boʻlmasa |
+| Saqlash joyi bandligi | 5 daq | 90% dan ortiq band |
+| Tarmoq qurilmalari holati | 5 daq | Kamida bitta qurilma offline/disconnected |
+| Shlyuz jonliligi | 5 daq | API javob bermasa yoki autentifikatsiya xatosi |
+| SSH brute-force | haftalik | Haftada 20 dan ortiq muvaffaqiyatsiz urinish |
+| Paket yangilanishlari | haftalik | 100 dan ortiq yangilanish kutilmoqda |
+| Backup yangiqligi | haftalik | Yaqin orada backup fayllari tushmagan |
+| Port anomaliyalari | haftalik | Tinglanayotgan portlar soni oʻzgargan |
 
 ## Arxitektura
 
@@ -41,23 +41,23 @@ AI agentlar kuchli, lekin LLM provayderi ishlamayotganda yoki gallyutsinatsiya q
 └────────────┘             └──────────────┘           ▼
 ```
 
-## Asosiy dizayn qarorlari
+## Dizayn boʻyicha asosiy qarorlar
 
-1. **Faqat stdlib** — pip bogʻliqliklari yoʻq, har qanday Python 3.10+ da ishlaydi
-2. **Deduplikatsiya uchun holat fayli** — ogohlantirishlar har soʻrovda emas, holat oʻzgarganda bir marta ishga tushadi
-3. **Ikki chiqish rejimi**: `critical` (faqat yangi/yopilgan ogohlantirishlar) va `digest` (toʻliq xulosa)
-4. **Cron + --no-agent** — skript stdout-i toʻgʻridan-toʻgʻri Telegram-ga boradi, zanjirda LLM yoʻq
+1. **Faqat stdlib** — pip bogʻliqliklari umuman yoʻq, Python 3.10+ oʻrnatilgan har qanday tizimda ishlaydi
+2. **Deduplikatsiya uchun holat fayli** — ogohlantirish har soʻrovda emas, faqat holat oʻzgarganda yuboriladi
+3. **Ikki chiqish rejimi**: `critical` (faqat yangi va yopilgan ogohlantirishlar) hamda `digest` (toʻliq xulosa)
+4. **Cron + --no-agent** — skript natijasi toʻgʻridan-toʻgʻri Telegram-ga tushadi, zanjirda LLM umuman ishtirok etmaydi
 
 ## Foydalanish
 
 ```bash
-# Kritik ogohlantirishlar (cron orqali har 5 daqiqada)
+# Kritik ogohlantirishlar (cron bilan har 5 daqiqada)
 ./scripts/nightwatch.py critical
 
-# Kunlik digest (cron orqali 08:00 da)
+# Kunlik digest (cron bilan soat 08:00 da)
 ./scripts/nightwatch.py digest
 
-# Haftalik xavfsizlik auditi (dushanba 09:00)
+# Haftalik xavfsizlik auditi (dushanba soat 09:00)
 ./scripts/secaudit.py
 ```
 

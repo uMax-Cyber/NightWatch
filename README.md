@@ -1,4 +1,5 @@
 # AI Night Watchman
+[![CI](https://github.com/uMax-Cyber/NightWatch/actions/workflows/ci.yml/badge.svg)](https://github.com/uMax-Cyber/NightWatch/actions/workflows/ci.yml)
 
 Deterministic (no-LLM) infrastructure monitoring daemon: Proxmox nodes, network controllers, firewalls, and services. Critical alerts within 5 minutes, daily digest, weekly security audit. Runs as cron jobs — survives AI model outages.
 

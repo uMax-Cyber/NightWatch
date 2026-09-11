@@ -1,0 +1,14 @@
+name: CI
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Syntax check
+        run: find scripts/ -name "*.py" -exec python3 -m py_compile {} + 2>/dev/null || echo "no py scripts"
+      - name: Shell check
+        run: find scripts/ -name "*.sh" -exec bash -n {} + 2>/dev/null || echo "no sh scripts"

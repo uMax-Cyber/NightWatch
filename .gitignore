@@ -1,0 +1,6 @@
+*.env
+*.key
+*.pem
+*password*
+__pycache__/
+.DS_Store

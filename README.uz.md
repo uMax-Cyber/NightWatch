@@ -1,12 +1,14 @@
 <div align="center">
 
-**🇬🇧 [English](README.md) · 🇷🇺 [Русский](README.ru.md) · 🇺🇿 [Oʻzbekcha](README.uz.md)**
+[![English](https://img.shields.io/badge/README-English-blue)](README.md)
+[![Русский](https://img.shields.io/badge/README-Русский-red)](README.ru.md)
+[![Oʻzbekcha](https://img.shields.io/badge/README-Oʻzbekcha-green)](README.uz.md)
 
 </div>
 
 # NightWatch — Детерминированный мониторинг
 
-LLMsiz infratuzilma monitoringi: Proxmox, tarmoq, firewall. Sof Python, cron, alert deduplikatsiya.
+LLM ishlatmasdan infratuzilmani kuzatish: Proxmox, tarmoq qurilmalari va firewall holatini doimiy nazorat qilish. Sof Python, cron orqali rejalashtirilgan, keraksiz ogohlantirishlarni filtrlash.
 
 ## Skrinshot
 
@@ -14,12 +16,14 @@ LLMsiz infratuzilma monitoringi: Proxmox, tarmoq, firewall. Sof Python, cron, al
 
 ## 📬 Aloqa
 
-Savollar bormi? Yozing: **[allumaxmail@gmail.com](mailto:allumaxmail@gmail.com)**
+Savollaringiz bormi? Yozing: **[allumaxmail@gmail.com](mailto:allumaxmail@gmail.com)**
 
 ---
 
 <div align="center">
 
-**🇬🇧 [English](README.md) · 🇷🇺 [Русский](README.ru.md) · 🇺🇿 [Oʻzbekcha](README.uz.md)**
+[![English](https://img.shields.io/badge/README-English-blue)](README.md)
+[![Рус](https://img.shields.io/badge/README-Русский-red)](README.ru.md)
+[![Oʻzbekcha](https://img.shields.io/badge/README-Oʻzbekcha-green)](README.uz.md)
 
 </div>

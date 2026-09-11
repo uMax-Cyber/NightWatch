@@ -1,6 +1,8 @@
 <div align="center">
 
-**🇬🇧 [English](README.md) · 🇷🇺 [Русский](README.ru.md) · 🇺🇿 [Oʻzbekcha](README.uz.md)**
+[![English](https://img.shields.io/badge/README-English-blue)](README.md)
+[![Русский](https://img.shields.io/badge/README-Русский-red)](README.ru.md)
+[![Oʻzbekcha](https://img.shields.io/badge/README-Oʻzbekcha-green)](README.uz.md)
 
 </div>
 
@@ -20,6 +22,8 @@
 
 <div align="center">
 
-**🇬🇧 [English](README.md) · 🇷🇺 [Русский](README.ru.md) · 🇺🇿 [Oʻzbekcha](README.uz.md)**
+[![English](https://img.shields.io/badge/README-English-blue)](README.md)
+[![Русский](https://img.shields.io/badge/README-Русский-red)](README.ru.md)
+[![Oʻzbekcha](https://img.shields.io/badge/README-Oʻzbekcha-green)](README.uz.md)
 
 </div>

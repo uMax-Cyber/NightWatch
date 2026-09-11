@@ -1,3 +1,5 @@
+[English](README.md) | [Русский](README.ru.md)
+
 # AI Night Watchman
 [![CI](https://github.com/uMax-Cyber/NightWatch/actions/workflows/ci.yml/badge.svg)](https://github.com/uMax-Cyber/NightWatch/actions/workflows/ci.yml)
 
